@@ -1,0 +1,311 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  line-height: 1.5;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  color: #343a40;
+  font-size: 2.5rem;
+}
+
+/* Main Content Styles */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input Area Styles */
+.input-area {
+  display: flex;
+  gap: 10px;
+}
+
+.search-box {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: white;
+}
+
+.search-icon {
+  color: #6c757d;
+  margin-right: 10px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  color: #212529;
+}
+
+.start-button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #0056b3;
+}
+
+/* Progress Indicator Styles */
+.progress-indicator {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.progress-bar-container {
+  width: 90%;
+  height: 10px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+  border-radius: 5px;
+}
+
+.progress-text {
+  font-size: 14px;
+  color: #6c757d;
+  min-width: 80px;
+  text-align: right;
+}
+
+.task-complete {
+  color: #28a745;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Content Container Styles */
+.content-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Steps Container Styles */
+.steps-container {
+  flex: 1;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.steps-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.steps-header h2 {
+  color: #343a40;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.steps-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.run-all-button,
+.save-workflow-button {
+  padding: 8px 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.run-all-button:hover,
+.save-workflow-button:hover {
+  background-color: #218838;
+}
+
+.save-workflow-button {
+  background-color: #17a2b8;
+}
+
+.save-workflow-button:hover {
+  background-color: #138496;
+}
+
+/* Step Styles */
+.step {
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #f8f9fa;
+}
+
+.step-content {
+  font-size: 14px;
+  color: #495057;
+}
+
+.step.running {
+  border-color: #ffc107;
+}
+
+.step.complete {
+  border-color: #28a745;
+}
+
+.run-step-button {
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.run-step-button:hover {
+  background-color: #218838;
+}
+
+.step-progress {
+  height: 4px;
+  background-color: #e9ecef;
+  overflow: hidden;
+}
+
+.step-progress-bar {
+  height: 100%;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.step-progress.complete .step-progress-bar {
+  background-color: #28a745;
+}
+
+/* Step Edit Styles */
+.step-edit {
+  display: flex;
+  padding: 10px 15px;
+  background-color: #f8f9fa;
+}
+
+.step-edit input {
+  flex-grow: 1;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #495057;
+}
+
+.step-edit button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.step-edit button:hover {
+  background-color: #218838;
+}
+
+/* Output Container Styles */
+.output-container {
+  flex: 1;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.output-container h2 {
+  color: #343a40;
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+}
+
+.output-log {
+  height: 400px;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.output-log p {
+  margin: 5px 0;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+
+  .steps-container,
+  .output-container {
+    width: 100%;
+  }
+}
